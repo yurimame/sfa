@@ -1,0 +1,188 @@
+body{
+	color:#555555;
+	background-color:#FFFFEE;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+form {
+	width: 100%;
+	height: 20px;
+	background-color: #BAD3FF;
+	text-align:center;
+	padding: 15px;
+}
+
+input {
+	width: 50%;
+	height: 25px;
+}
+i:hover{
+	cursor: pointer;
+	transform:rotate(45deg);
+
+}
+.button{
+	outline:none;
+	border: none;
+	background-color:#FFFFEE;
+	margin-left:20px;
+}
+
+.submit {
+	width: 5%;
+	height: 25px;
+}
+
+.drawer_hidden {
+	display: none; /*チェックボックスを隠す}*/
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+	position: absolute; /* absoluteにしてtopなどを設定することで配置する場所を調節 */
+	top: 30px; /* 上からの距離 */
+	left: 15px; /* 左からの距離 */
+	cursor: pointer;/* ハンバーガーメニューの上にくると指差しになる */
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+	content: '';/*アイコンの線を作成*/
+	display: block;
+	height: 3px;
+	width: 25px;
+	border-radius: 3px;/*角を丸くする*/
+	background: #333;
+	transition: 0.5s;
+	position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+	bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+	top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+	background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.nav_content {
+	width: 15%;
+	height: 40%;
+	position: absolute;
+	top: 10%; /* メニューを第一ヘッダーの下に表示する */
+	right: 100%; /* 左に隠す */
+	background: rgb(110, 110, 110);
+	line-height: 35px;
+}
+
+.nav_item a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+	left: 0;/* メニューを画面に入れる */
+}
+
+nav {
+ 	width: 100%;
+ 	height: 40px;
+ 	background-color: white;
+}
+
+.menu {
+ 	display: flex;
+ 	margin-top: 0px;
+ 	text-decoration: none;
+}
+
+.menu_ber {
+	text-decoration: none;
+	color: #666666;
+	margin-right: 35px;
+	position: relative;
+	top: 13px;
+}
+
+.menu_ber:focus {
+	border-bottom: 3px solid #6495ED;
+}
+
+.li-oya{
+	display:inline-block;
+	margin-right:100px;
+}
+.taiki{
+	margin-left:70px;
+}
+
+.anken-itiran{
+	width:285px;
+	height:auto;
+	background-color:#EEEEEE;
+	overflow:scroll;
+	overflow-y: hidden visible;
+	overflow-x: hidden;
+	float:left;
+}
+.anken-list{
+	height:80px;
+	width:210px;
+	border:1px solid #808080;
+	background-color:white;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:15px;
+	border-radius:15px;
+}
+.henkou-box{
+	width:75px;
+	height:40px;
+	margin-left:140px;
+	margin-top:-14px;
+	background-color:#d3d3d3;
+	display:none;
+}
+.henkou-ul{
+	font-size:13px;
+}
+.henkou-li{
+	border-bottom:1px solid black;
+}
+.li-li{
+	margin-left:-38px;
+}
+.li-li:hover{
+	cursor: pointer;
+	color:red;
+}
+#triangle-btn{
+	cursor: pointer;
+}

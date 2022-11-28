@@ -1,0 +1,42 @@
+body{
+	color:#555555;
+	background-color:#FFFFEE;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.header-top{
+	background-color:#D0B0FF;
+	height:35px;
+}
+.headre-bottom{
+	height:35px;
+	background-color:white;
+}
+.li-oya{
+	display:inline-block;
+	margin-right:120px;
+}
+
+.anken-itiran{
+	width:285px;
+	height:auto;
+	background-color:#EEEEEE;
+	overflow:scroll;
+	overflow-y: hidden visible;
+	overflow-x: hidden;
+	float:left;
+}
+.anken-list{
+	height:80px;
+	width:210px;
+	border:1px solid #808080;
+	background-color:white;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:15px;
+	border-radius:15px;
+}
